@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario de Cafetería - Croissaneria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <nav class="navbar">
+        <div class="logo">
+<a href="index.html">
+            <img src="images/logo.jpg" alt="Logo Croissaneria" class="logo-img">
+</a>
+            <div class="logo-text">
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="inventario.html">Inventario</a></li>
+            <li><a href="ventas.html">Ventas</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Sección de Bienvenida -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a La Croissaneria</h1>
+            <p>Disfruta de nuestros productos frescos y deliciosos, preparados con amor y los mejores ingredientes.</p>
+            <a href="inventario.html" class="btn">Ver Inventario</a>
+        </div>
+    </section>
+
+    <!-- Sección de Productos Destacados -->
+    <section class="featured-products">
+        <h2>Productos Destacados</h2>
+        <div class="product-cards">
+            <div class="product-card">
+                <img src="images/cafe.jpg" alt="Producto 1">
+                <h3>Café Espresso</h3>
+                <p>$2.500</p>
+                <a href="ventas.html" class="btn">Pedir Ahora</a>
+            </div>
+            <div class="product-card">
+                <img src="images/pastel.jpg" alt="Producto 2">
+                <h3>Pastel de Chocolate</h3>
+                <p>$3.900</p>
+                <a href="ventas.html" class="btn">Pedir Ahora</a>
+            </div>
+            <div class="product-card">
+                <img src="images/te.jpg" alt="Producto 3">
+                <h3>Te Verde</h3>
+                <p>$1.800</p>
+                <a href="ventas.html" class="btn">Pedir Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Gestión de Inventario -->
+    <section class="inventory-summary">
+        <h2>Resumen de Inventario</h2>
+        <div class="summary-cards">
+            <div class="summary-card">
+                <h3>Total de Productos</h3>
+                <p>50</p>
+            </div>
+            <div class="summary-card">
+                <h3>Productos Vendidos</h3>
+                <p>200</p>
+            </div>
+            <div class="summary-card">
+                <h3>Valor Total en Inventario</h3>
+                <p>$450.00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Croissaneria. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
